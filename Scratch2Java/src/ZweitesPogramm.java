@@ -9,7 +9,7 @@ public class ZweitesPogramm {
         // Rechenen
         int ergebnis;
         ergebnis = zahl1+zahl2;
-
+        // Ausgabe des Ergebnisses
         System. out .println  ("Das Ergebnis lautet: " + ergebnis);
 
 
