@@ -42,7 +42,7 @@ public class NotenDurchschnittBerechner {
             System.out.println("Die Note 2 wurde erreicht");
         else
 
-        if (Prozent > 85)
+        if (Prozent > 84)
             System.out.println("Die Note 1 wurde erreicht");
 
 
