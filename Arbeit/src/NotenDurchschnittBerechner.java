@@ -12,29 +12,39 @@ public class NotenDurchschnittBerechner {
 
         if (Prozent < 27)
         System.out.println("Die Note 6 wurde erreicht");
+        else
 
-        if (Prozent < 45 | Prozent > 27)
+        if (Prozent >= 27 && Prozent <= 44)
             System.out.println("Die Note 5 wurde erreicht");
+
         if (Prozent == 27)
             System.out.println("Die Note 5 wurde erreicht");
+        else
 
-        if (Prozent < 59 | Prozent > 45)
+        if (Prozent >= 45 && Prozent <= 59)
             System.out.println("Die Note 4 wurde erreicht");
+        else
         if (Prozent == 45)
             System.out.println("Die Note 4 wurde erreicht");
+        else
 
-        if (Prozent < 73 | Prozent > 59)
+        if (Prozent >= 58 && Prozent <= 73)
             System.out.println("Die Note 3 wurde erreicht");
+        else
         if (Prozent == 59)
             System.out.println("Die Note 3 wurde erreicht");
+        else
 
-        if (Prozent < 85 | Prozent > 73)
+        if (Prozent >= 72 && Prozent <= 84)
             System.out.println("Die Note 2 wurde erreicht");
+        else
         if (Prozent == 73)
             System.out.println("Die Note 2 wurde erreicht");
+        else
 
         if (Prozent > 85)
             System.out.println("Die Note 1 wurde erreicht");
+
 
     }
 }
