@@ -11,7 +11,7 @@ public class Test {
 
 
 
-        int Punktzahl = 0;
+        double Punktzahl = 0;
 
         // Frage 1
         System.out.println("8 * 8");
@@ -141,14 +141,11 @@ public class Test {
 
         if (Punktzahl == 10) {
             System.out.println("Du hast "+Punktzahl +" von 10 Punkten erreicht. Du bist sehr schlau und dich erwartet eine goldene Zukunft!");
-        }else System.out.println("Du hast "+Punktzahl +" von 10 Punkten erreicht. Du bist dumm! Wie kann man Aufgabe 10 falsch haben??? Überleg dir gut ob MATA wirklich das richtige für die ist!");
+        }else
+            if (Punktzahl == 9) {
+                System.out.println("Du hast "+Punktzahl +" von 10 Punkten erreicht. Du bist dumm! Wie kann man Aufgabe 10 falsch haben??? Überleg dir gut ob MATA wirklich das richtige für die ist!");
 
-
-
-
-
-
-
+            }
 
 
     }
