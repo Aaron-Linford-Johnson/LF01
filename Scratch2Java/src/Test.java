@@ -17,7 +17,7 @@ public class Test {
         System.out.println("8 * 8");
         System.out.println("A) 64");
         System.out.println("B) 87");
-        System.out.println("= ");
+        System.out.print("= ");
         String antworten = br.readLine();
         double A1 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -29,7 +29,7 @@ public class Test {
         System.out.println("A) 70");
         System.out.println("B) 50");
         System.out.println("C) 75");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A2 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -41,7 +41,7 @@ public class Test {
         System.out.println("A) 320");
         System.out.println("B) 230");
         System.out.println("C) 28277 Braaaa");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A3 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -53,7 +53,7 @@ public class Test {
         System.out.println("A) 187");
         System.out.println("B) 456");
         System.out.println("C) 374");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A4 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -66,7 +66,7 @@ public class Test {
         System.out.println("A) 108");
         System.out.println("B) 103");
         System.out.println("C) 105");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A5 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -79,7 +79,7 @@ public class Test {
         System.out.println("A) 30");
         System.out.println("B) 25");
         System.out.println("C) 20");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A6 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -92,7 +92,7 @@ public class Test {
         System.out.println("A) 5");
         System.out.println("B) 100");
         System.out.println("C) -50");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A7 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -105,7 +105,7 @@ public class Test {
         System.out.println("A) 20");
         System.out.println("B) 30");
         System.out.println("C) Was das für eine Behinderte Aufgabe man!!!");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A8 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -118,7 +118,7 @@ public class Test {
         System.out.println("A) 187");
         System.out.println("B) 456");
         System.out.println("C) 100");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A9 = Double.parseDouble(antworten.trim().replace(',','.'));
 
@@ -131,7 +131,7 @@ public class Test {
         System.out.println("A) 1");
         System.out.println("B) 1");
         System.out.println("C) 1");
-        System.out.println("= ");
+        System.out.print("= ");
         antworten = br.readLine();
         double A10 = Double.parseDouble(antworten.trim().replace(',','.'));
 
