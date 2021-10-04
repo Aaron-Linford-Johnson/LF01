@@ -24,21 +24,8 @@ public class Dreiecksungleichung {
             System.out.println(" Der Umfang ist = " + Umfang);
             double s = Umfang / 2;
             double wurzel = Math.sqrt(s * (s - seiteA) * (s - seiteB) * (s - seiteC));
-            double hoeheMitA = seiteA * wurzel / 2;
-            double hoeheMitB = seiteB * wurzel / 2;
-            double hoeheMitC = seiteC * wurzel / 2;
-
-            if (seiteA > seiteB && seiteA > seiteC) {
-                System.out.println("Der Flächeninhalt (mit a als Grundseite) ist = " + hoeheMitA);
+            System.out.println("Der Flächeninhalt ist = "+wurzel);
             }
-            else if (seiteB > seiteA && seiteB > seiteC) {
-                System.out.println("Der Flächeninhalt (mit b als Grundseite) ist = " + hoeheMitB);
-            }
-            else if (seiteC > seiteA && seiteC > seiteB) {
-                System.out.println("Der Flächeninhalt (mit c als Grundseite) ist = " + hoeheMitC);
-            }
-
-        }
         else {
             System.out.println("Das zeichnen eines Dreieckes ist nicht möglich.");
         }
