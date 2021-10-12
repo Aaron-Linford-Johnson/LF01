@@ -19,7 +19,9 @@ public class TaschenrechnerFinale {
             System.out.println("[w] für Wurzelziehen");
             System.out.print("Wählen sie ein Rechenoperator aus: ");
             String menue = br.readLine();
+
             //Rechnung & Ausgabe
+                                    //Addition
             if (menue.equals("+")){
                 System.out.print("Geben sie die erste Zahl ein: ");
                 String eingabe = br.readLine();
@@ -30,10 +32,11 @@ public class TaschenrechnerFinale {
                 double zahl2 = Double.parseDouble(eingabe.trim().replace(',','.'));
 
                 System.out.println("Das Ergebnis ist: "+ (zahl1+zahl2));
+
                 //Wiederholen
                 System.out.println("wollen sie noch eine Rechnung durchführen, dann geben sie [j] ein für Ja oder [n] ein für Nein.");
                 wiederholen = br.readLine();
-            } //Subtrahieren
+            }                            //Subtraktion
             else if (menue.equals("-")){
                 System.out.print("Geben sie die erste Zahl ein: ");
                 String eingabe = br.readLine();
@@ -44,10 +47,11 @@ public class TaschenrechnerFinale {
                 double zahl2 = Double.parseDouble(eingabe.trim().replace(',','.'));
 
                 System.out.println("Das Ergenis ist: "+(zahl1-zahl2));
+
                 //Wiederholen
                 System.out.println("wollen sie noch eine Rechnung durchführen, dann geben sie [j] ein für Ja oder [n] ein für Nein.");
                 wiederholen = br.readLine();
-            } //Multiplizieren
+            }                            //Multiplikation
             else if (menue.equals("*")){
                 System.out.print("Geben sie die erste Zahl ein: ");
                 String eingabe = br.readLine();
@@ -58,10 +62,11 @@ public class TaschenrechnerFinale {
                 double zahl2 = Double.parseDouble(eingabe.trim().replace(',','.'));
 
                 System.out.println("Das Ergebnis ist: "+(zahl1*zahl2));
+
                 //Wiederholen
                 System.out.println("wollen sie noch eine Rechnung durchführen, dann geben sie [j] ein für Ja oder [n] ein für Nein.");
                 wiederholen = br.readLine();
-            } //Dividieren
+            }                            //Division
             else if (menue.equals("/")){
                 System.out.print("Geben sie die erste Zahl ein: ");
                 String eingabe = br.readLine();
@@ -72,10 +77,11 @@ public class TaschenrechnerFinale {
                 double zahl2 = Double.parseDouble(eingabe.trim().replace(',','.'));
 
                 System.out.println("Das Ergebnis ist: "+(zahl1/zahl2));
+
                 //Wiederholen
                 System.out.println("wollen sie noch eine Rechnung durchführen, dann geben sie [j] ein für Ja oder [n] ein für Nein.");
                 wiederholen = br.readLine();
-            } //Potenzieren
+            }                            //Potenzieren
             else if (menue.equals("p")){
                 System.out.print("Geben sie die Basis ein: ");
                 String eingabe = br.readLine();
@@ -86,16 +92,18 @@ public class TaschenrechnerFinale {
                 double exponent = Double.parseDouble(eingabe.trim().replace(',','.'));
 
                 System.out.println(basis +"Hoch "+exponent+"= "+(Math.pow(basis,exponent)));
+
                 //Wiederholen
                 System.out.println("wollen sie noch eine Rechnung durchführen, dann geben sie [j] ein für Ja oder [n] ein für Nein.");
                 wiederholen = br.readLine();
-            } //Wurzelrechnung
+            }                            //Wurzelziehen
             else if (menue.equals("w")){
                 System.out.print("Geben sie die Zahl ein: ");
                 String eingabe = br.readLine();
                 double wurzel = Double.parseDouble(eingabe.trim().replace(',','.'));
 
                 System.out.println("Die Wurzel von "+wurzel+" ist = "+(Math.sqrt(wurzel)));
+
                 //Wiederholen
                 System.out.println("wollen sie noch eine Rechnung durchführen, dann geben sie [j] ein für Ja oder [n] ein für Nein.");
                 wiederholen = br.readLine();
