@@ -29,11 +29,10 @@ public class Ostern {
             m = 24;
             n = 6;
         }
-
         int restA = jahr % 19;
         int restB = jahr % 4;
         int restC = jahr % 7;
-        int restD = (19 * restA + m) / 30;
+        int restD = (19 * restA + m) % 30;
         int restE = (2 * restB + 4 * restC + 6 * restD + n) % 7;
 
         int ostern1 = 22 + restD + restE;
@@ -45,12 +44,10 @@ public class Ostern {
         if (ostern1 <=31 ){
             System.out.println("Ostern ist am "+ostern1 +" März.");
         }
-        else if (ostern1 > 31){
-            System.out.println("Ostern ist am "+ostern2 +" April.");}
-
-        else if (ostern1 == 26 ) {
-            System.out.println("Ostern ist am 19 April.");
-        } else if (restD == 28 && restE == 6 &&    ((( 11 * m + 11) % 30 <19 ))) {
+        else if (ostern1 > 32){
+            System.out.println("Ostern ist am "+ostern2 +" April.");
+        }
+        else if (restD == 28 && restE == 6 && ( 11 * m + 11 % 30) <19 && ostern2 == 25){
             System.out.println("Ostern i9st am 18 April.");
         }
     }
