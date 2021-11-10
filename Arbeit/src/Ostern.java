@@ -45,12 +45,12 @@ public class Ostern {
         if (ostern1 <=31 ){
             System.out.println("Ostern ist am "+ostern1 +" März.");
         }
-        else
-            System.out.println("Ostern ist am "+ostern2 +" April.");
+        else if (ostern1 > 31){
+            System.out.println("Ostern ist am "+ostern2 +" April.");}
 
-        if (ostern1 == 26 ) {
+        else if (ostern1 == 26 ) {
             System.out.println("Ostern ist am 19 April.");
-        } else if (restD == 28 && restE == 6 &&( 11*m+11 % 30) <19 = 25) {
+        } else if (restD == 28 && restE == 6 &&    ((( 11 * m + 11) % 30 <19 ))) {
             System.out.println("Ostern i9st am 18 April.");
         }
     }
