@@ -25,6 +25,8 @@ public class pqFormelXXL {
 
             System.out.println("X1,2 = " +x1);
         }
-        else System.out.println("Berechnung nicht möglich!");
+        else {
+            System.out.println("Berechnung nicht möglich!");
+        }
     }
 }
