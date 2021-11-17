@@ -13,7 +13,7 @@ public class pqFormel {
 
         double x2 = - p/2 + Math.sqrt((Math.pow(p/2,2)-q));
 
-        System.out.println(x1);
-        System.out.println(x2);
+        System.out.println("x1 = "+x1);
+        System.out.println("x2 = "+x2);
     }
 }
