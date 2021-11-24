@@ -3,7 +3,7 @@ import java.io.IOException;
 public class GeometrischeReihe {
     public static void main(String[] args) throws IOException {
 
-        System.out.print("Geben sie die Endzahl ein:");
+        System.out.print("Geben sie den Endexponenten ein:");
         int ende = IO.readInt();
 
         double gReihe;
