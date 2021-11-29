@@ -28,15 +28,17 @@ public class IO {
         System.out.print("Wie groß soll das Array sein: ");
         int n = IO.readInt();
 
-        readArrayString(n);
-
-        return werteliste;
-
+        return readStringArray(n);
 
         }
 
-    }
-    public static String[] readArrayString(int n) throws IOException {
+    /**
+     *
+     * @param n
+     * @return
+     * @throws IOException
+     */
+    public static String[] readStringArray(int n) throws IOException {
 
         String[] werteliste = new String[n];
         for (int i = 0; i < werteliste.length; i++) {
@@ -69,7 +71,7 @@ public class IO {
      * @return Werteliste
      * @throws IOException
      */
-    public static int[] readArrayInt() throws IOException {
+    public static int[] readIntArray() throws IOException {
 
         System.out.println("Wie viele Werte sollen erfasst werden: ");
         int n = IO.readInt();
@@ -109,29 +111,34 @@ public class IO {
         }
     }
 
-    //Boolean
+
     /**
      *
      * @return Werteliste
      * @throws IOException
      */
-    public static double[] readArraydouble() throws IOException {
+    public static double[] readDoubleArray() throws IOException {
         System.out.println("Wie viele Werte sollen erfasst werden: ");
         int n = IO.readInt();
 
+        double[] werteliste = new double[n];
+
+        readDoubleArray(n);
+
+        return werteliste;
+    }
+
+    public static double[] readDoubleArray(int n) throws IOException {
         double[] werteliste = new double[n];
 
         for (int i = 0; i < werteliste.length; i++) {
             System.out.print("Bitte den " + (i + 1) + " Wert eingeben: ");
             werteliste[i] = IO.readDouble();
         }
-
-        for (int i = 0; i < werteliste.length; i++) {
-            System.out.println("Wert-" + (i + 1) + ": " + werteliste[i]);
-        }
         return werteliste;
     }
 
+    //Boolean
     /**
      * Gibt zurück ob eingabe True oder False ist
      * @return True oder False
