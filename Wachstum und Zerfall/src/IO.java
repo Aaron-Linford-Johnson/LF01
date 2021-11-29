@@ -20,8 +20,8 @@ public class IO {
     }
 
     /**
-     *
-     * @return Werteliste
+     * Liest ein eindimensionales Array mit Text von der Konsole ein
+     * @return eindimensionales Array mit String
      * @throws IOException
      */
     public static String[] readArrayString() throws IOException {
@@ -29,23 +29,21 @@ public class IO {
         int n = IO.readInt();
 
         return readStringArray(n);
-
-        }
+    }
 
     /**
-     *
+     * Liest ein eindimensionales Array mit Text von der Konsole ein
      * @param n
-     * @return
+     * @return eindimensionales Array mit String
      * @throws IOException
      */
     public static String[] readStringArray(int n) throws IOException {
-
-        String[] werteliste = new String[n];
-        for (int i = 0; i < werteliste.length; i++) {
+        String[] array = new String[n];
+        for (int i = 0; i < array.length; i++) {
             System.out.print("Bitte den " + (i + 1) + " Werte eingeben: ");
-            werteliste[i] = IO.readString();
+            array[i] = IO.readString();
         }
-        return werteliste;
+        return array;
     }
 
     //Integer
@@ -67,8 +65,8 @@ public class IO {
     }
 
     /**
-     * Liest ein Array mit Ganzzahl von der Konsole ein
-     * @return Werteliste
+     * Liest ein eindimensionales Array mit Ganzzahl von der Konsole ein
+     * @return eindimensionales Array mit Ganzzahl
      * @throws IOException
      */
     public static int[] readIntArray() throws IOException {
@@ -77,21 +75,21 @@ public class IO {
         int n = IO.readInt();
 
         return readArrayInt(n);
-        }
+    }
 
     /**
-     *
+     * Liest ein eindimensionales Array mit Ganzzahl von der Konsole ein (erwartet int)
      * @param n
-     * @return
+     * @return eindimensionales Array mit Ganzzahl
      * @throws IOException
      */
     public static int[] readArrayInt(int n) throws IOException {
-        int[] werteliste = new int[n];
-        for (int i = 0; i < werteliste.length; i++) {
+        int[] array = new int[n];
+        for (int i = 0; i < array.length; i++) {
             System.out.print("Bitte den " + (i + 1) + " Wert eingeben: ");
-            werteliste[i] = IO.readInt();
+            array[i] = IO.readInt();
         }
-        return werteliste;
+        return array;
     }
 
     //Double
@@ -111,31 +109,32 @@ public class IO {
         }
     }
 
-
     /**
-     *
-     * @return Werteliste
+     * Liest ein eindimensionales Array mit Nachkommazahl von der Konsole ein
+     * @return eindimensionales Array mit Nachkommastelle
      * @throws IOException
      */
     public static double[] readDoubleArray() throws IOException {
         System.out.println("Wie viele Werte sollen erfasst werden: ");
         int n = IO.readInt();
 
-        double[] werteliste = new double[n];
-
-        readDoubleArray(n);
-
-        return werteliste;
+       return readDoubleArray(n);
     }
 
+    /**
+     * Liest ein eindimensionales Array mit Nachkommazahl von der Konsole ein (erwartet int)
+     * @param n
+     * @return eindimensionales Array mit Nachkommastelle
+     * @throws IOException
+     */
     public static double[] readDoubleArray(int n) throws IOException {
-        double[] werteliste = new double[n];
+        double[] array = new double[n];
 
-        for (int i = 0; i < werteliste.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             System.out.print("Bitte den " + (i + 1) + " Wert eingeben: ");
-            werteliste[i] = IO.readDouble();
+            array[i] = IO.readDouble();
         }
-        return werteliste;
+        return array;
     }
 
     //Boolean
