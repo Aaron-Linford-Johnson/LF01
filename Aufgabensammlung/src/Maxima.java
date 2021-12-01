@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class MaximaTest {
+public class Maxima {
     public static void main(String[] args) throws IOException {
 
             double[] a = IO.readDoubleArray();
