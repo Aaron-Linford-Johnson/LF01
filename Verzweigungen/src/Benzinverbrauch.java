@@ -12,7 +12,7 @@ public class Benzinverbrauch {
         double durVerbrauch;
 
         if (km > 0) {
-            durVerbrauch = 100 * l / km;
+            durVerbrauch = 100 * (l / km);
 
             System.out.println("Ihr Durchschnittsverbrauch liegt bei "+durVerbrauch);
         }
