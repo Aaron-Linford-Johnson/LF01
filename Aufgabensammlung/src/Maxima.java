@@ -3,7 +3,7 @@ import java.io.IOException;
 public class Maxima {
     public static void main(String[] args) throws IOException {
 
-            double[] a = IO.readDoubleArray();
+            double[] a = IO.readDoubleArray1D();
 
 
 

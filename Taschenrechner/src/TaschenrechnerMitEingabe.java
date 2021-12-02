@@ -14,7 +14,7 @@ public class TaschenrechnerMitEingabe {
         System.out.print("Geben sie die zweite Zahl ein: ");
         eingabe = br.readLine();
         double zahl2 = Double.parseDouble(eingabe.trim().replace(',','.'));
-        String z;
+
 
         System.out.println("Mit welchen rechenoperator wollen sie rechnen (+/ - / * / oder /)");
         String rechenoperator = br.readLine();
@@ -33,8 +33,11 @@ public class TaschenrechnerMitEingabe {
         else if (rechenoperator.equals("/")){
             System.out.println("Das Ergebnis ist: "+(zahl1/zahl2));
 
+
+            }
+
         }
 
 
     }
-}
+

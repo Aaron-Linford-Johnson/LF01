@@ -141,11 +141,13 @@ public class Test {
 
         if (Punktzahl == 10) {
             System.out.println("Du hast "+Punktzahl +" von 10 Punkten erreicht. Du bist sehr schlau und dich erwartet eine goldene Zukunft!");
-        }else
-            if (Punktzahl == 9) {
+        }
+        else if (Punktzahl <= 9 && !(A10 == 187)) {
                 System.out.println("Du hast "+Punktzahl +" von 10 Punkten erreicht. Du bist dumm! Wie kann man Aufgabe 10 falsch haben??? Überleg dir gut ob MATA wirklich das richtige für die ist!");
-
-            }
+        }
+        else if (Punktzahl <= 9 && (A10 == 187)) {
+            System.out.println("Du hast "+Punktzahl +"von 10 Punten erreicht. Leider bist du nicht schlau genung um die volle Punktzahl zu ergattern.");
+        }
 
 
     }

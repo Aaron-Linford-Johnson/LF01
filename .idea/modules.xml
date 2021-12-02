@@ -4,7 +4,15 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Arbeit/Arbeit.iml" filepath="$PROJECT_DIR$/Arbeit/Arbeit.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/LF01.iml" filepath="$PROJECT_DIR$/.idea/LF01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PQ-Formel/PQ-Formel.iml" filepath="$PROJECT_DIR$/PQ-Formel/PQ-Formel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Schleifen/Schleifen.iml" filepath="$PROJECT_DIR$/Schleifen/Schleifen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scratch2Java/Schleifen..iml" filepath="$PROJECT_DIR$/Scratch2Java/Schleifen..iml" />
       <module fileurl="file://$PROJECT_DIR$/Scratch2Java/Scratch2Java.iml" filepath="$PROJECT_DIR$/Scratch2Java/Scratch2Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Statistik/Statistik.iml" filepath="$PROJECT_DIR$/Statistik/Statistik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Taschenrechner/Taschenrechner.iml" filepath="$PROJECT_DIR$/Taschenrechner/Taschenrechner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aufgabensammlung/Vektoren.iml" filepath="$PROJECT_DIR$/Aufgabensammlung/Vektoren.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Verzweigungen/Verzweigungen.iml" filepath="$PROJECT_DIR$/Verzweigungen/Verzweigungen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wachstum und Zerfall/Wachstum und Zerfall.iml" filepath="$PROJECT_DIR$/Wachstum und Zerfall/Wachstum und Zerfall.iml" />
     </modules>
   </component>
 </project>

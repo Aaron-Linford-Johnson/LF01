@@ -2,11 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class TaschenrechnerFinale {
+public class TaschenrechnerFinaleBoolean {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        String wiederholen;
+        Boolean wiederholen;
 
         do {
             //Menü
@@ -15,7 +15,7 @@ public class TaschenrechnerFinale {
             String menue = br.readLine();
 
             //Rechnung & Ausgabe
-                                    //Addition
+            //Addition
             if (menue.equals("+")){
                 System.out.print("Geben sie die erste Zahl ein: ");
                 String eingabe = br.readLine();
@@ -88,22 +88,21 @@ public class TaschenrechnerFinale {
                 double wurzel = Double.parseDouble(eingabe.trim().replace(',','.'));
 
                 System.out.println("Die Wurzel von "+wurzel+" ist = "+(Math.sqrt(wurzel)));
-        }
+            }
             //Wiederholen
             System.out.println("wollen sie noch eine Rechnung durchführen, dann geben sie [j] ein für Ja oder [n] ein für Nein.");
-            wiederholen = br.readLine();
+            wiederholen = IO.readBoolean();
 
-        } while (wiederholen.equals("j"));
+        } while (wiederholen);
 
-}
-private static void schreibeMenue (){
-    System.out.println("[+] für Addition");
-    System.out.println("[-] für Subtraktion");
-    System.out.println("[*] für Multiplikation");
-    System.out.println("[/] für Division");
-    System.out.println("[p] für Potenzieren");
-    System.out.println("[w] für Wurzelziehen");
-    System.out.print("Wählen sie ein Rechenoperator aus: ");
-}
-
+    }
+    private static void schreibeMenue (){
+        System.out.println("[+] für Addition");
+        System.out.println("[-] für Subtraktion");
+        System.out.println("[*] für Multiplikation");
+        System.out.println("[/] für Division");
+        System.out.println("[p] für Potenzieren");
+        System.out.println("[w] für Wurzelziehen");
+        System.out.print("Wählen sie ein Rechenoperator aus: ");
+    }
 }

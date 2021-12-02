@@ -4,7 +4,7 @@ public class Verdoppeln {
     public static void main(String[] args) throws IOException {
 
         System.out.println("Bitte geben sie ein Array aus Kommazahlen ein.");
-        double[] array = IO.readDoubleArray();
+        double[] array = IO.readDoubleArray1D();
 
         System.out.println("Ursprüngliches Array:");
         for (int i = 0; i < array.length; i++) {

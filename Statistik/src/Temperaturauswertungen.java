@@ -138,3 +138,21 @@ public class Temperaturauswertungen {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@ public class SuchenInArray {
 
 
         System.out.println("Bitte geben sie 5 Kommazahlen ein.");
-        double[] array = IO.readDoubleArray(5);
+        double[] array = IO.readDoubleArray1D(5);
 
         System.out.print("Nach welcher zahl wollen sie suchen?");
         double zahl = IO.readDouble();

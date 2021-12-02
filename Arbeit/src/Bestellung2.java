@@ -128,7 +128,7 @@ public class Bestellung2 {
                             unterlegscheibenNeuMinus = (unterlegscheiben - unterlegscheibenEntf) * schraubenpreis;
 
                         }
-                    } else
+                    }
                 }
             }
         }

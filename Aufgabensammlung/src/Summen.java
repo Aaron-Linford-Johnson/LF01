@@ -8,7 +8,7 @@ public class Summen {
         int ungrade = 0;
         int summeUngerade = 0;
 
-        int[] array = IO.readIntArray();
+        int[] array = IO.readIntArray1D();
 
         for (int i = 0; i < array.length; i++){
             if (array[i] % 2 == 0){

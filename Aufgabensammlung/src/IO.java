@@ -24,11 +24,11 @@ public class IO {
      * @return eindimensionales Array mit String
      * @throws IOException
      */
-    public static String[] readArrayString() throws IOException {
+    public static String[] readArrayStringArray1D() throws IOException {
         System.out.print("Wie groß soll das Array sein: ");
         int n = IO.readInt();
 
-        return readStringArray(n);
+        return readStringArray1D(n);
     }
 
     /**
@@ -37,10 +37,12 @@ public class IO {
      * @return eindimensionales Array mit String
      * @throws IOException
      */
-    public static String[] readStringArray(int n) throws IOException {
+    public static String[] readStringArray1D(int n) throws IOException {
+        System.out.println("Was soll erfasst werden?");
+        String erfassung = IO.readString();
         String[] array = new String[n];
         for (int i = 0; i < array.length; i++) {
-            System.out.print("Bitte den " + (i + 1) + " Werte eingeben: ");
+            System.out.print("Bitte " + (i + 1) + " " + erfassung + " eingeben: ");
             array[i] = IO.readString();
         }
         return array;
@@ -69,12 +71,12 @@ public class IO {
      * @return eindimensionales Array mit Ganzzahl
      * @throws IOException
      */
-    public static int[] readIntArray() throws IOException {
+    public static int[] readIntArray1D() throws IOException {
 
         System.out.println("Wie viele Werte sollen erfasst werden: ");
         int n = IO.readInt();
 
-        return readArrayInt(n);
+        return readIntArray1D(n);
     }
 
     /**
@@ -83,10 +85,12 @@ public class IO {
      * @return eindimensionales Array mit Ganzzahl
      * @throws IOException
      */
-    public static int[] readArrayInt(int n) throws IOException {
+    public static int[] readIntArray1D(int n) throws IOException {
+        System.out.println("Was soll erfasst werden?");
+        String erfassung = IO.readString();
         int[] array = new int[n];
         for (int i = 0; i < array.length; i++) {
-            System.out.print("Bitte den " + (i + 1) + " Wert eingeben: ");
+            System.out.print("Bitte " + (i + 1) + " " + erfassung + "  eingeben: ");
             array[i] = IO.readInt();
         }
         return array;
@@ -114,11 +118,11 @@ public class IO {
      * @return eindimensionales Array mit Nachkommastelle
      * @throws IOException
      */
-    public static double[] readDoubleArray() throws IOException {
+    public static double[] readDoubleArray1D() throws IOException {
         System.out.println("Wie viele Werte sollen erfasst werden: ");
         int n = IO.readInt();
 
-       return readDoubleArray(n);
+       return readDoubleArray1D(n);
     }
 
     /**
@@ -127,11 +131,12 @@ public class IO {
      * @return eindimensionales Array mit Nachkommastelle
      * @throws IOException
      */
-    public static double[] readDoubleArray(int n) throws IOException {
+    public static double[] readDoubleArray1D(int n) throws IOException {
+        System.out.println("Was soll erfasst werden?");
+        String erfassung = IO.readString();
         double[] array = new double[n];
-
         for (int i = 0; i < array.length; i++) {
-            System.out.print("Bitte den " + (i + 1) + " Wert eingeben: ");
+            System.out.print("Bitte " + (i + 1) + " " + erfassung + "  eingeben: ");
             array[i] = IO.readDouble();
         }
         return array;
